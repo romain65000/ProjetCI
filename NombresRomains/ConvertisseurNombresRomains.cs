@@ -4,6 +4,6 @@ public static class ConvertisseurNombresRomains
 {
     public static string Convertir(uint chiffre)
     {
-        return "I";
+        return chiffre == 1 ? "I" : "II";
     }
 }
