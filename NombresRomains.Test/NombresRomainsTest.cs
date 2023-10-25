@@ -2,18 +2,45 @@ namespace NombresRomains.Test;
 
 public class NombresRomainsTest
 {
-    [Theory]
-    [InlineData(1)]
-    [InlineData(2)]
-    public void Test1(uint chiffre)
+    [Fact]
+    public void Test1()
     {
-        // ETANT DONNE le chiffre <chiffre>
+        // ETANT DONNE le chiffre 1
+        const uint chiffre = 1;
+
         // QUAND on le convertit en nombres romains
-        var nombreRomain = 
+        var nombreRomain =
             ConvertisseurNombresRomains.Convertir(chiffre);
 
-        // ALORS on obtient "I", <chiffre> fois
-        var attendu = new string('I', (int) chiffre);
-        Assert.Equal(attendu, nombreRomain);
+        // ALORS on obtient "I"
+        Assert.Equal("I", nombreRomain);
+    }
+
+    [Fact]
+    public void Test2()
+    {
+        // ETANT DONNE le chiffre 2
+        const uint chiffre = 2;
+
+        // QUAND on le convertit en nombres romains
+        var nombreRomain =
+            ConvertisseurNombresRomains.Convertir(chiffre);
+
+        // ALORS on obtient "II"
+        Assert.Equal("II", nombreRomain);
+    }
+
+    [Fact]
+    public void Test3()
+    {
+        // ETANT DONNE le chiffre 3
+        const uint chiffre = 3;
+
+        // QUAND on le convertit en nombres romains
+        var nombreRomain =
+            ConvertisseurNombresRomains.Convertir(chiffre);
+
+        // ALORS on obtient "III"
+        Assert.Equal("III", nombreRomain);
     }
 }
