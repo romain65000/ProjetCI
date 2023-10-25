@@ -4,7 +4,20 @@ public static class ConvertisseurNombresRomains
 {
     public static string Convertir(uint chiffre)
     {
-        if (chiffre == 3) return "III";
-        return chiffre == 1 ? "I" : "II";
+        switch (chiffre)
+        {
+            case 1:
+                return "I";
+            case 2:
+                return "II";
+            case 3:
+                return "III";
+            case 4:
+                return "IV";
+            case 5:
+                return "V";
+            default:
+                return "VI";
+        }
     }
 }
