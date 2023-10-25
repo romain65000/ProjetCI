@@ -15,7 +15,7 @@ public static class ConvertisseurNombresRomains
             case 4:
                 return "IV";
             case 5:
-                return "V"
+                return "V";
             default:
                 return "VI";
         }
