@@ -1,6 +1,4 @@
 # ProjetCI
-# ProjetCI
-
 ## Consnigne 
 Crée une branche DEV
 
