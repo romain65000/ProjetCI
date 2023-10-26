@@ -1,5 +1,5 @@
 # ProjetCI
-## Consnigne 
+## Consigne 
 Crée une branche DEV
 
 le scirpt se lance quand on à un nouveaux commit sur la branche DEV
